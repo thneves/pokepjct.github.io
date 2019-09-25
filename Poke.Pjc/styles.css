@@ -1,0 +1,183 @@
+
+
+
+
+
+/* navbar and logo */
+
+.navbar li a {
+  color: white;
+  font-family: Mansalva;
+  font-size: 18px;
+}
+
+.logo-img {
+  height: 60px;
+}
+
+.nav-item {
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+
+
+
+/* ARTWORK */
+
+#artwork {
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+.art-img {
+  height: 450px;
+  width: 325px;
+  text-align: center;
+  transition: 0.5s linear;
+  }
+
+.art-img:hover {
+  cursor: pointer;
+}
+
+.art-img:active {
+  transform: scale(1.7)
+}
+
+
+
+
+.carousel-item {
+text-align: center;
+background-color: #000;
+padding: 5%;
+margin-right: 300px;
+overflow: hidden;
+}
+
+/* TATTOO GALLERY */
+
+#gallery {
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+div h1 {
+  text-align: center;
+  font-size: 66px;
+  font-family: Mansalva;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+
+.img-gallery {
+  border: 1px solid white;
+  transition: 0.5s linear;
+  height: 350px;
+  width: 320px;
+}
+
+.img-gallery:hover {
+  cursor: pointer;
+  }
+
+.img-gallery:active {
+  transform: scale(2);
+  z-index: 1;
+  position: relative;
+}
+
+.row-1 {
+  padding: 40px 40px 20px;
+}
+
+.row-2 {
+  padding: 20px 40px 20px;
+  }
+
+.row-3 {
+  padding: 20px 40px 40px;
+}
+
+.row {
+  background-color: black;
+  text-align: center;
+}
+
+/* TECHNICAL  */
+
+#technical {
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+.tech-row {
+  background-color: white;
+  border: 5px solid black;
+  padding: 40px;
+  text-align: justify;
+}
+
+#technical p {
+  padding-left: 40px;
+  font-family: Montserrat;
+}
+
+
+/* ABOUT */
+
+#about {
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+.about-row {
+  background-color: white;
+  border: 5px solid black;
+  padding: 40px;
+  text-align: justify;
+}
+
+#about p {
+  font-family: Montserrat;
+  font-size: 18px;
+}
+
+
+
+/* CONTACT FORM
+ */
+
+ #contact {
+   padding-top: 7%;
+   padding-bottom: 7%;
+ }
+
+.contact-row {
+  background-color: white;
+  border: 5px solid black;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: justify;
+}
+
+button {
+  padding: 50px;
+}
+
+/* footer  */
+
+footer {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-top: 10px;
+  background-color: #343a40;
+}
+
+footer p {
+  color: white;
+}

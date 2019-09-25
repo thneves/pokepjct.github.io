@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <!-- Jquery Javascrip -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <title> Poke.Pjct</title>
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/e0df4acd2f.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 3000, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+<script>
+$(window).scroll(function(){
+     var scroll = $(window).scrollTop();
+     if(scroll < 1100){
+         $('.fixed-top').css('background', 'transparent');
+     } else{
+         $('.fixed-top').css('background', '#343a40');
+     }
+ });
+</script>
+
+
+
+</head>
+
+<body>
+  <section id="header-section">
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg  static-top">
+        <div class="container">
+          <a class="navbar-brand" href="#img-head">
+            <img class="logo-img" src="logodois.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#artwork">ARTWORK </a>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">TATTOOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#technical">TECHNICAL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </section>
+
+  <!-- Home Image -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <img id="img-head" class="img-fluid" src="First-test.jpg" alt="Responsive Image" />
+    </div>
+  </div>
+
+  <!-- Artwork -->
+  <section id="artwork">
+
+    <div class="container">
+      <div class="artwork-h1">
+        <h1>ARTWORK</h1>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="art-img" src="Artwork 1.jpg" class="d-block w-100" alt="Artwork One">
+          </div>
+          <div class="carousel-item">
+            <img class="art-img" src="Artwork 2.jpg" class="d-block w-100" alt="Artwork Two">
+          </div>
+          <div class="carousel-item">
+            <img class="art-img" src="Artwork 3.jpg" class="d-block w-100" alt="Artwork Three">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TATTO GALLERY -->
+
+  <section id="gallery">
+    <div class="container">
+      <div>
+        <h1>TATTOO GALLERY</h1>
+      </div>
+      <div class="row row-1">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img class="img-gallery" src="1.jpg" alt="Rope Eyes">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img class="img-gallery" src="2.jpg" alt="Dark Organic Mandala">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img class="img-gallery" src="3.jpg" alt="Bloody Moon">
+        </div>
+
+      </div>
+      <div class="row row-2">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img class="img-gallery" src="4.png" alt="Flying Insect">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img class="img-gallery" src="5.jpg" alt="Witch">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img class="img-gallery" src="6.jpg" alt="Eye Flower">
+        </div>
+      </div>
+      <div class="row row-3">
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img class="img-gallery" src="7.jpg" alt="Leaf Mandala">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img class="img-gallery" src="8.jpg" alt="sun and moon">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img class="img-gallery" src="9.jpg" alt="home">
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Technical -->
+
+  <section id="technical">
+    <div class="container">
+      <div class="tech-h1">
+        <h1>TECHNICAL</h1>
+      </div>
+      <div class="row tech-row">
+        <div class="col-md-4">
+          <img src="needle.jpg" alt="">
+        </div>
+        <div class="col-md-8">
+          <p> Stick & Poke is a method of tattooing. The tattoo process is the same as using a tattoo machine (gun), but the needle is hand powered rather than electric. Fundamentally, hand poke tattooing is using a sharp point to deposit an ink
+            pigment into one’s skin to leave a permanent mark. Body art has been practiced for thousands of years. It is thought hand poke tattoos were used to signify health, birth, death, religion and religious rituals.<br><br>
+            Hand poke tattoos are very distinctive in their look, and many styles can be achieved with various techniques. It is often agreed that hand pokes look more natural and organic.<br><br>
+            The method is very simple, and that’s often the appeal. There is no aggressive machine buzz or equipment. Rather, just a needle, ink and sterilization apparatus. It generally doesn’t hurt as much as a machine tattoo either. This is
+            because its less invasive which allows the skin to heal quicker.<br><br>
+            Commonly, stick & poke tattoos are done in a dot work style. This looks especially good when applied to mandalas and geometric shapes as every little dot makes up a fundamental part of the design.</p>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT ME -->
+  <section id="about">
+    <div class="container">
+      <h1>ABOUT ME</h1>
+    <div class="row about-row">
+  <div class="col-md-4">
+    <img src="act1.jpg" alt="tattoing">
+  </div>
+  <div class="col-md-8">
+    <p> My name is Henry Chinaski, I was born in Los Angeles,
+      the city of angels. I started to drink very early and
+      my best friend was littlebold, we drunk our first beer
+      at the age of 13. After being rejected by society, for
+      being ugly and alcoholic, I started to draw. Then, I
+      discovered that I could make tattoos, and that is how
+      I ended up here. Now I tattoo people and I love it.</p>
+    </p>
+  </div>
+
+</div>
+
+</div>
+
+</section>
+
+  <section id="contact">
+    <div class="container">
+      <div>
+        <h1>CONTACT ME</h1>
+      </div>
+      <div class="row contact-row">
+
+        <div class="col-md-12">
+          <div class="well well-sm">
+            <form class="form-horizontal" action="mailto:danilomf07@gmail.com" method="post">
+              <fieldset>
+
+                <div class="form-group">
+                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                  <div class="col-md-8">
+                    <input id="fname" name="name" type="text" placeholder="Name" class="form-control">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                  <div class="col-md-8">
+                    <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                  </div>
+                </div>
+
+
+
+                <div class="form-group">
+                  <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                  <div class="col-md-8">
+                    <textarea class="form-control" id="message" name="message" placeholder="Write here your tattoo idea." rows="7"></textarea>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-secondary btn-lg sub-button">Submit</button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+
+    <a href="https://www.instagram.com/poke.pjct?" target="_blank" <i class="fab fa-instagram cta-icon fa-5x"></i></a>
+
+
+    <p>@poke.pjct</p>
+
+  </footer>
+</body>
+
+
+</html>
